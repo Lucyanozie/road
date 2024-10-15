@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <title>Michelle Smith - Personal Biography</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    
 </head>
 <body>
-<a href="about us.html">About us</a><br/>
-<a href="contact us.html">Contact Us</a>
-    <h1 align="center">Michelle Smith</h1>
-	
-	<hr/>
-    <img src="images/miche.jpg"  width="300" border="2" align="center">
 
-    <hr>
+    <h1>Registration Form</h1>
 
-    <p><b>Background:</b> Michelle Smith is a software baker based in the United States of America, Arizona. she has a passion for food and anything that had to do with putting a smile on people's face with the tast of her food, specializing in baking, cooking and anything that has to do with th tasting and making of food.</p>
-    
-    <p><b>Education:</b> Michelle holds a <i>Master's degree</i> in food science and technology from Stanford University, and a <i>Bachelor's degree</i> in cooking from UC Berkeley. <sup>MS</sup>, <sub>BS</sub>.</p>
-    
-    <hr>
-    
-    <p><b>Hobbies:</b> In her free time, Michelle enjoys hiking, reading science fiction, and exploring new programming languages. He is an advocate for open-source projects and contributes to GitHub regularly.</p>
-    
-    <p><b>Achievements:</b> 
-    - Won a cooking contest.<br>
-    - Was on the world record for the most visited resturant for 2 yrs<br>
-    - Published a cooking book with more than 300 recipies.</p>
-    
-    <p><i>"Strive not to be a success, but rather to be of value." - Albert Einstein</i></p>
-    
+    <form id="registrationForm">
+        FIRST NAME:<input type="text"  name="FIRST_NAME" size="30" maxlength="5" >
+        <br/>
+        <br/>
+        SURNAME:<input type="text"  name="SURNAME" size="30" maxlength="5">
+        <br/>
+        <br/>
+        EMAIL: <input type="email" name="email" size="30" maxlength="5" >
+        <br/>
+        <br/>
+        DATE<input type="date"  name="Date of Birth" size="30" maxlength="5">
+        <br/>
+        <br/>
+        MALE<input type="radio" name="gender" value="Male">
+        <br/>
+        <br/>
+        FEMALE<input type="radio"  name="gender" value="Female">
+        <br/>
+        <br/>
+       <b> FAVOURITE SUBJECTS </b>
+        <br/>
+        <br/>
+        MATH<input type="checkbox" name="math" value="on">
+        <br/>
+        <br/>
+        BIOLOGY<input type="checkbox" name="biology" value="on">
+        <br/>
+        <br/>
+        ENGLISH<input type="checkbox" name="english" value="on">
+        <br/>
+        <br/>
+        HISTORY<input type="checkbox" name="history" value="History">
+        <br/>
+        <br/>
+
+        <select name="dropdown" required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="UK">UK</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="submit" name="SUBMIT" value="SUBMIT">
+    </form>
+
+    <h2>Summary Table</h2>
+    <table border="2">
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Favorite Subjects</th>
+                <th>Country</th>
+            </tr>
+        
+    </table>
 </body>
 </html>
