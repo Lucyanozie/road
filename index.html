@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form </title>
-    
+    <meta name="event" content="wedding">
+    <title>Event RSVP Form</title>
+
 </head>
 <body>
 
-    <h1>Registration Form</h1>
+    <h1>RSVP to Our Event</h1>
 
-    <form id="registrationForm">
-        FIRST NAME:<input type="text"  name="FIRST_NAME" size="30" maxlength="5" >
+    <form id="rsvpForm">
         <br/>
         <br/>
-        SURNAME:<input type="text"  name="SURNAME" size="30" maxlength="5">
+        NAME<input type="text" name="name" size="30" maxlength="5">
         <br/>
         <br/>
-        EMAIL: <input type="email" name="email" size="30" maxlength="5" >
+        EMAIL<input type="email" name="email"  size="30" maxlength="5">
         <br/>
         <br/>
-        DATE<input type="date"  name="Date of Birth" size="30" maxlength="5">
+        PHONE NUMBER<input type="text" name="phone_number"  size="30" maxlength="5">
         <br/>
         <br/>
-        MALE<input type="radio" name="gender" value="Male">
+        <input type="radio"  name="attend" value="Yes"> Yes
+        <input type="radio"  name="attend" value="No"> No
         <br/>
         <br/>
-        FEMALE<input type="radio"  name="gender" value="Female">
-        <br/>
-        <br/>
-       <b> FAVOURITE SUBJECTS </b>
-        <br/>
-        <br/>
-        MATH<input type="checkbox" name="math" value="on">
-        <br/>
-        <br/>
-        BIOLOGY<input type="checkbox" name="biology" value="on">
-        <br/>
-        <br/>
-        ENGLISH<input type="checkbox" name="english" value="on">
-        <br/>
-        <br/>
-        HISTORY<input type="checkbox" name="history" value="History">
-        <br/>
-        <br/>
-
-        <select name="dropdown" required>
-            <option value="">Select your country</option>
-            <option value="USA">USA</option>
-            <option value="Nigeria">Nigeria</option>
-            <option value="UK">UK</option>
+        
+        <select name="dropdown">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
         </select>
         <br/>
         <br/>
-        <input type="submit" name="SUBMIT" value="SUBMIT">
+        
+        <textarea cols="50" name="diet" rows="5"> enter Dietary Restrictions here</textarea>
+        <br/>
+        <br/>
+        <input type="submit" name="submit" value="SUBMIT">
     </form>
 
-    <h2>Summary Table</h2>
+    <h2>Guest List</h2>
     <table border="2">
             <tr>
-                <th>Full Name</th>
+                <th>Name</th>
                 <th>Email</th>
-                <th>Date of Birth</th>
-                <th>Gender</th>
-                <th>Favorite Subjects</th>
-                <th>Country</th>
+                <th>Phone</th>
+                <th>Will Attend</th>
+                <th>Guests</th>
+                <th>Dietary Restrictions</th>
             </tr>
-        
+            <!-- Guest rows will be added here -->
+            <tr>
+                <td>kelly</td>
+                <td>kelly@gmail.com</td>
+                <td>08076543456</td>
+                <td>yes</td>
+                <td>friend</td>
+                <td>i cant eat seafood</td>
+            </tr>
+            <tr>
+                <td>Diana</td>
+                <td>diana@gmail.com</td>
+                <td>08076543456</td>
+                <td>yes</td>
+                <td>friend</td>
+                <td>i cant eat seafood</td>
+            </tr>
+            <tr>
+                <td>Rose</td>
+                <td>rose@gmail.com</td>
+                <td>08076543456</td>
+                <td>yes</td>
+                <td>sister</td>
+                <td>i cant eat seafood</td>
+            </tr>
     </table>
+
+    
+
 </body>
 </html>
