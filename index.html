@@ -1,86 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="event" content="wedding">
-    <title>Event RSVP Form</title>
-
+    <meta name="keyword" content="blog, lucy ">
+        <meta name="description" content="my life in writings">
+        <meta name="Author" content="Anozie lucy">
+        <meta name="revised" content="17/10/24">
+    <title>My Personal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1;
+            padding: 1;
+            background-color: #f9f4ef; 
+        }
+        .navbar {
+            background-color: #8b4b01;
+            color: white;
+            padding: 10px ;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin:  15px;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #8b4b01; 
+            color: white;
+        }
+        .post-preview {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #d8c9b9; 
+            border-radius: 8px;
+            
+        }
+        .post-preview h2 {
+            margin-bottom: 10px;
+            color: #3b2e1f; 
+        }
+        .post-preview a {
+            color: #8b4b01; 
+            
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin:  auto;
+            display: block;
+            border-radius: 8px; 
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+    </div>
 
-    <h1>RSVP to Our Event</h1>
+    <!-- Header Section -->
+        <h1>Welcome to My Personal Blog</h1>
+        <p>Sharing thoughts, stories, and ideas</p>
+<br/>
 
-    <form id="rsvpForm">
-        <br/>
-        <br/>
-        NAME<input type="text" name="name" size="30" maxlength="5">
-        <br/>
-        <br/>
-        EMAIL<input type="email" name="email"  size="30" maxlength="5">
-        <br/>
-        <br/>
-        PHONE NUMBER<input type="text" name="phone_number"  size="30" maxlength="5">
-        <br/>
-        <br/>
-        <input type="radio"  name="attend" value="Yes"> Yes
-        <input type="radio"  name="attend" value="No"> No
-        <br/>
-        <br/>
-        
-        <select name="dropdown">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        <br/>
-        <br/>
-        
-        <textarea cols="50" name="diet" rows="5"> enter Dietary Restrictions here</textarea>
-        <br/>
-        <br/>
-        <input type="submit" name="submit" value="SUBMIT">
-    </form>
+    <!-- Banner Image -->
+    <img src="images/travels.jpg">
 
-    <h2>Guest List</h2>
-    <table border="2">
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Will Attend</th>
-                <th>Guests</th>
-                <th>Dietary Restrictions</th>
-            </tr>
-            <!-- Guest rows will be added here -->
-            <tr>
-                <td>kelly</td>
-                <td>kelly@gmail.com</td>
-                <td>08076543456</td>
-                <td>yes</td>
-                <td>friend</td>
-                <td>i cant eat seafood</td>
-            </tr>
-            <tr>
-                <td>Diana</td>
-                <td>diana@gmail.com</td>
-                <td>08076543456</td>
-                <td>yes</td>
-                <td>friend</td>
-                <td>i cant eat seafood</td>
-            </tr>
-            <tr>
-                <td>Rose</td>
-                <td>rose@gmail.com</td>
-                <td>08076543456</td>
-                <td>yes</td>
-                <td>sister</td>
-                <td>i cant eat seafood</td>
-            </tr>
-    </table>
+    <!-- Blog Post Previews -->
+    <div class="post-preview">
+        <h2>Exploring the Beauty of Nature</h2>
+        <p>Join me as I embark on a journey through the breathtaking landscapes of our national parks. From majestic mountains to serene lakes, discover the beauty that nature has to offer.</p>
+        <a href="blog.html">Read More</a>
+    </div>
 
+    <div class="post-preview">
+        <h2>Culinary Adventures: My Favorite Recipes</h2>
+        <p>Cooking is an art that brings people together. In this post, I’ll share some of my favorite recipes that are not only delicious but also easy to prepare.</p>
+        <a href="https://desserts.com">Read More</a>
+    </div>
     
-
+    <div class="post-preview">
+        <h2>Travel Diaries: My Recent Trip to Bali</h2>
+        <p>Follow along as I recount my amazing experience in Bali, exploring its rich culture, stunning beaches, and vibrant nightlife. Get inspired for your next vacation!</p>
+        <a href="https://avaitor.com">Read More</a>
+    </div>
+    
 </body>
 </html>
