@@ -1,61 +1,95 @@
-header{
+header {
     background-color: #333;
-    color:antiquewhite;
+    color: antiquewhite;
     padding: 10px 5px;
     text-align: center;
     border-radius: 4px;
 }
-nav ul  {
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
+    justify-content: center; /* Center navigation items */
 }
-nav ul li{
-    display: inline;
+
+nav ul li {
     margin: 0 10px;
 }
-nav ul li a{
+
+nav ul li a {
     color: antiquewhite;
     text-decoration: none;
 }
-section{
+
+section {
     padding: 20px;
 }
-footer{
+
+footer {
     background-color: #333;
     text-align: center;
     padding: 10px 0;
-    position:relative;
+    position: relative;
     width: 100%;
     bottom: 0;
     border-radius: 4px;
 }
-.homeimage img{
-    width: 30%;
-    margin: 0 30px 0 10px;
-    display: inline-flexbox;
-    justify-content: space-evenly;
-    
-}
-.video{
-    margin-top: 20px;
-    
-    align-content: center;
-    padding: 30px;
 
+.homeimage img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Set a max-width for larger screens */
+    margin: 0 30px 0 10px;
+    display: inline-block; /* Change to inline-block */
 }
-.directors{
-    width:30%;
-    margin: 0 10px;
-    display: inline-flex;
-    justify-content: space-around;
-    
+
+.video {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center content */
+    padding: 30px;
 }
-h2,h3{
+
+.directors {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Margin for spacing */
+    display: flex;
+    justify-content: center; /* Center content */
+}
+
+h2, h3 {
     text-align: center;
 }
-.may{
+
+.may {
     width: 20px;
     align-content: center;
     margin-left: 10px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items on mobile */
+    }
+
+    .homeimage img {
+        width: 80%; /* Make images larger on mobile */
+        margin: 10px auto; /* Center images */
+    }
+
+    .video {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .directors {
+        flex-direction: column; /* Stack directors vertically on mobile */
+        width: 90%; /* Slightly reduce width */
+    }
+
+    .may {
+        margin-left: 5px; /* Reduce margin on mobile */
+    }
