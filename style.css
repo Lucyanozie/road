@@ -64,6 +64,7 @@ h2,h3 {
        flex-wrap: wrap;
         gap: 10px;
         margin-top: 20px;
+    display: inline-flex;
 }
 .Directors img {
     width: 30%;
