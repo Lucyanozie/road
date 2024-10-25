@@ -59,11 +59,11 @@ h2,h3 {
 
 }
 .Directors {
-    display: flex;
-    justify-content: center; /* Centers the images horizontally */
-    flex-wrap: wrap; /* Allows images to wrap if there's not enough space */
-    gap: 10px; /* Adds space between the images */
-    margin-top: 20px; /* Optional: adds space above the images */
+     display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
 }
 .Directors img {
     width: 30%;
