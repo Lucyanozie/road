@@ -16,6 +16,7 @@ nav ul {
 }
 
 nav ul li {
+    display: inline; /* Keep inline display for larger screens */
     margin: 0 10px;
 }
 
@@ -39,25 +40,26 @@ footer {
 }
 
 .homeimage img {
-    width: 100%; /* Make images responsive */
-    max-width: 300px; /* Set a max-width for larger screens */
+    width: 30%; /* Original style */
+    max-width: 300px; /* Set max-width for larger screens */
     margin: 0 30px 0 10px;
-    display: inline-block; /* Change to inline-block */
+    display: inline-block; /* Change to inline-block for consistency */
 }
 
 .video {
     margin-top: 20px;
     display: flex;
+    align-content: center;
+    padding: 30px;
     flex-direction: column; /* Stack items vertically on mobile */
     align-items: center; /* Center content */
-    padding: 30px;
 }
 
 .directors {
-    width: 100%; /* Full width on mobile */
-    margin: 10px 0; /* Margin for spacing */
-    display: flex;
-    justify-content: center; /* Center content */
+    width: 30%; /* Original style */
+    margin: 0 10px;
+    display: inline-flex; /* Keep inline-flex display */
+    justify-content: space-around; /* Original style */
 }
 
 h2, h3 {
