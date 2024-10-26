@@ -4,81 +4,70 @@ header {
     padding: 10px 5px;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 section {
     padding: 20px;
 }
-h2,h3 {
+
+h2, h3 {
     text-align: center;
 }
 
-    .homeimage {
-        display: flex;
-        justify-content: center;
-       flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
+.homeimage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
 }
-    .homeimage img {
-        width: 30%;
-        height: auto;
-        margin-bottom: 3%;
-    }
-    .products {
-        display: flex;
-        justify-content: center;
-  flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-        margin-top: 20px;
-    }
-    
-    .products img {
-        width: 30%;
-        height: auto;
-        margin-bottom: 3%;
-    }
 
-.products img {
-    width: 30%;
-    margin: 0 10px;
-    display: inline-flex;
-    justify-content: space-around;
-
-}
-.Directors {
-        justify-content: center;
-       flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-    display: inline-flex;
-}
-.Directors img {
-    width: auto;
+.homeimage img,
+.products img,
+.Directors img,
+.may img {
+    width: 30%; /* Default width for images */
     height: auto;
     margin-bottom: 3%;
 }
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Directors {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .may {
     display: flex;
     justify-content: center; /* Centers the image horizontally */
     padding-left: 0; /* Remove the left padding */
-    margin-top: 20px; /* Optional: adds space above the image */
-}
-.may {
+    margin-top: 20px; /* Adds space above the image */
     width: 80%; /* Adjust the width as needed */
-    height: auto;
 }
 
 footer {
@@ -89,4 +78,22 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .homeimage img,
+    .products img,
+    .Directors img,
+    .may img {
+        width: 80%; /* Full width on smaller screens */
+    }
 }
