@@ -1,12 +1,13 @@
 header {
     background-color: #333;
-    color: white;
+    color: antiquewhite;
     padding: 10px 5px;
     text-align: center;
+    border-radius: 4px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -17,7 +18,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: antiquewhite;
     text-decoration: none;
 }
 
@@ -25,75 +26,97 @@ section {
     padding: 20px;
 }
 
-h2, h3 {
-    text-align: center;
-}
-
-.homeimage {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.homeimage img,
-.products img,
-.Directors img,
-.may img {
-    width: 30%; /* Default width for images */
-    height: auto;
-    margin-bottom: 3%;
-}
-
-.products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.Directors {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.may {
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    padding-left: 0; /* Remove the left padding */
-    margin-top: 20px; /* Adds space above the image */
-    width: 80%; /* Adjust the width as needed */
-}
-
 footer {
     background-color: #333;
-    color: white;
     text-align: center;
     padding: 10px 0;
     position: relative;
     width: 100%;
     bottom: 0;
+    border-radius: 4px;
 }
 
-/* Responsive Design */
+.homeimage img {
+    width: 30%;
+    margin: 0 30px 0 10px;
+    display: inline-flexbox;
+    justify-content: space-evenly;
+}
+
+.video {
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    padding: 30px;
+}
+
+.directors {
+    width: 30%;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.may {
+    width: 20px;
+    align-content: center;
+    margin-left: 10px;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em; /* Adjust font size */
+    nav ul li {
+        display: block;
+        margin: 5px 0;
     }
 
-    h3 {
-        font-size: 1.2em; /* Adjust font size */
+    .homeimage img {
+        width: 60%; /* Adjust image size for tablets */
+        margin: 10px auto;
+        display: block;
     }
 
-    .homeimage img,
-    .products img,
-    .Directors img,
-    .may img {
-        width: 80%; /* Full width on smaller screens */
+    .video, .directors {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .may {
+        width: 15px; /* Slightly smaller for tablet screens */
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 8px 4px;
+    }
+
+    .homeimage img {
+        width: 80%; /* Further reduce image size for mobile */
+        margin: 10px auto;
+    }
+
+    .video {
+        padding: 15px;
+    }
+
+    .directors {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    h2, h3 {
+        font-size: 1.2em; /* Adjust heading sizes for readability on smaller screens */
+    }
+
+    .may {
+        width: 12px; /* Smaller size for mobile */
+        margin-left: 3px;
     }
 }
