@@ -36,11 +36,15 @@ footer {
     border-radius: 4px;
 }
 
+.homeimage {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
 .homeimage img {
     width: 30%;
-    margin: 0 30px 0 10px;
-    display: inline-flexbox;
-    justify-content: space-evenly;
+    margin: 0 10px; /* Keep some spacing between images */
+    flex-shrink: 0; /* Prevent images from shrinking on mobile */
 }
 
 .video {
@@ -75,9 +79,8 @@ h2, h3 {
     }
 
     .homeimage img {
-        width: 60%; /* Adjust image size for tablets */
+        width: 40%; /* Adjust image size for tablets */
         margin: 10px auto;
-        display: block;
     }
 
     .video, .directors {
@@ -87,7 +90,7 @@ h2, h3 {
     }
 
     .may {
-        width: 15px; /* Slightly smaller for tablet screens */
+        width: 15px; /* Smaller size for tablets */
         margin-left: 5px;
     }
 }
@@ -97,13 +100,21 @@ h2, h3 {
         padding: 8px 4px;
     }
 
+    .homeimage {
+        display: flex;
+        overflow-x: auto; /* Horizontal scroll for images on mobile */
+    }
+
     .homeimage img {
-        width: 80%; /* Further reduce image size for mobile */
-        margin: 10px auto;
+        width: 50%; /* Smaller images for mobile */
+        margin: 5px;
+        flex-shrink: 0; /* Keep images in a horizontal row */
     }
 
     .video {
-        padding: 15px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
     }
 
     .directors {
@@ -112,11 +123,13 @@ h2, h3 {
     }
 
     h2, h3 {
-        font-size: 1.2em; /* Adjust heading sizes for readability on smaller screens */
+        font-size: 1.2em; /* Adjust heading sizes for readability */
     }
 
     .may {
-        width: 12px; /* Smaller size for mobile */
+        width: 10px; /* Smaller size for mobile */
         margin-left: 3px;
     }
 }
+
+ 
