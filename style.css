@@ -1,15 +1,22 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 header {
-    background-color: #333;
-    color: antiquewhite;
-    padding: 10px 5px;
+    background-color: green;
+    color: white;
+    padding: 1em;
     text-align: center;
-    border-radius: 4px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -18,125 +25,81 @@ nav ul li {
 }
 
 nav ul li a {
-    color: antiquewhite;
+    color: white;
     text-decoration: none;
 }
 
+main {
+    padding: 2em;
+}
+
+h1, h2, h3 {
+    color: green;
+}
+
 section {
+    margin-bottom: 2em;
+}
+.product_list{ 
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
+}
+.product_item{
+    width: 30%;
+    text-align: center;
+}
+.product_image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    padding: 2em;
+    background-color: #e0e0e0;
+}
+
+.button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    margin-top: 1em;
 }
 
 footer {
-    background-color: #333;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    padding: 1em;
+    background-color: green;
+    color: white;
+    
     width: 100%;
     bottom: 0;
-    border-radius: 4px;
 }
 
-.homeimage {
+form {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scroll if needed */
+    flex-direction: column;
 }
 
-.homeimage img {
-    width: 30%;
-    margin: 0 10px; /* Keep some spacing between images */
-    flex-shrink: 0; /* Prevent images from shrinking on mobile */
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.video {
-    margin-top: 20px;
-    display: flex;
-    align-content: center;
-    padding: 30px;
-}
-.directors {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scroll if needed */
+form button {
+    padding: 1em;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.directors img {
-    width: 30%;
-    margin: 0 10px; /* Keep some spacing between images */
-    flex-shrink: 0; /* Prevent images from shrinking on mobile */
-}
-
-h2, h3 {
-    text-align: center;
-}
-
-.may {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .homeimage img {
-        width: 40%; /* Adjust image size for tablets */
-        margin: 10px auto;
-    }
-
-    .video {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-.directors{
-    width: 40%; /* Adjust image size for tablets */
-    margin: 10px auto;
-}
-
-    .may {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header, footer {
-        padding: 8px 4px;
-    }
-
-    .homeimage {
-        display: flex;
-        overflow-x: auto; /* Horizontal scroll for images on mobile */
-    }
-
-    .homeimage img {
-        width: 50%; /* Smaller images for mobile */
-        margin: 5px;
-        flex-shrink: 0; /* Keep images in a horizontal row */
-    }
-
-    .video {
-        padding: 10px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .directors {
-        width: 100%;
-        padding: 0 5px;
-    }
-
-    h2, h3 {
-        font-size: 1.2em; /* Adjust heading sizes for readability */
-    }
-
-    .may {
-        width: 10px; /* Smaller size for mobile */
-        margin-left: 3px;
-    }
+form button:hover {
+    background-color: green;
 }
